@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+
+    { "src": "/api/api.php/(.*)", "dest": "https://www.heimuer.tv/api.php/$1" },
+    { "src": "/ikun/(.*)",   "dest": "https://ikunzy.net/$1" },
+    { "src": "/subo/(.*)",   "dest": "https://www.suboziyuan.net/$1" },
+    { "src": "/huawei/(.*)", "dest": "https://cjhwba.com/$1" },
+    { "src": "/jisu/(.*)",   "dest": "https://www.jisuzy.com/$1" },
+    { "src": "/360/(.*)",    "dest": "https://360zy5.com/$1" },
+    { "src": "/wolong/(.*)", "dest": "https://wolongzyw.com/$1" },
+
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": "text/html"
+        }
+      ],
+      "dest": "/index.html"
+    }
+  ]
+}
