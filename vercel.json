@@ -9,23 +9,16 @@
       }
     }
   ],
-  "functions": {
-    "api/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "routes": [
     { "handle": "filesystem" },
 
-    { "src": "/api/heimuer/(.*)", "dest": "/api/heimuer" },
-    { "src": "/ikun/(.*)", "dest": "/api/ikun" },
-    { "src": "/subo/(.*)", "dest": "/api/subo" },
-    { "src": "/huawei/(.*)", "dest": "/api/huawei" },
-    { "src": "/jisu/(.*)", "dest": "/api/jisu" },
-    { "src": "/360/(.*)", "dest": "/api/360" },
-    { "src": "/wolong/(.*)", "dest": "/api/wolong" },
-
-    { "src": "/api/proxy/([^/]+)/(.*)", "dest": "/api/proxy?service=$1&0=$2" },
+    { "src": "/api/(.*)", "dest": "https://www.heimuer.tv/$1" },
+    { "src": "/ikun/(.*)",   "dest": "https://ikunzy.net/$1" },
+    { "src": "/subo/(.*)",   "dest": "https://www.suboziyuan.net/$1" },
+    { "src": "/huawei/(.*)", "dest": "https://cjhwba.com/$1" },
+    { "src": "/jisu/(.*)",   "dest": "https://www.jisuzy.com/$1" },
+    { "src": "/360/(.*)",    "dest": "https://360zy5.com/$1" },
+    { "src": "/wolong/(.*)", "dest": "https://wolongzyw.com/$1" },
 
     {
       "src": "/(.*)",
