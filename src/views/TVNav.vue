@@ -156,11 +156,13 @@ const fetchTVs = async (isLoadMore = false) => {
     
     console.log(`正在加载类型ID: ${typeId} 的数据，页码: ${currentPage.value}`)
     try {
-      const response = await axios.post('/api/api.php/provide/vod/', {
-        ac: 'videolist',
-        pg: currentPage.value,
-        pagesize: pageSize.value,
-        t: typeId
+      const response = await axios.get('/api/api.php/provide/vod/', {
+        params: {
+          ac: 'videolist',
+          pg: currentPage.value,
+          pagesize: pageSize.value,
+          t: typeId
+        }
       })
 
 
