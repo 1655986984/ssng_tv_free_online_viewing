@@ -17,13 +17,15 @@
   "routes": [
     { "handle": "filesystem" },
 
-    { "src": "/api/(.*)", "dest": "/api/proxy?target=heimuer&path=$1" },
-    { "src": "/ikun/(.*)",   "dest": "/api/proxy?target=ikun&path=$1" },
-    { "src": "/subo/(.*)",   "dest": "/api/proxy?target=subo&path=$1" },
-    { "src": "/huawei/(.*)", "dest": "/api/proxy?target=huawei&path=$1" },
-    { "src": "/jisu/(.*)",   "dest": "/api/proxy?target=jisu&path=$1" },
-    { "src": "/360/(.*)",    "dest": "/api/proxy?target=360&path=$1" },
-    { "src": "/wolong/(.*)", "dest": "/api/proxy?target=wolong&path=$1" },
+    { "src": "/api/heimuer/(.*)", "dest": "/api/heimuer" },
+    { "src": "/ikun/(.*)", "dest": "/api/ikun" },
+    { "src": "/subo/(.*)", "dest": "/api/subo" },
+    { "src": "/huawei/(.*)", "dest": "/api/huawei" },
+    { "src": "/jisu/(.*)", "dest": "/api/jisu" },
+    { "src": "/360/(.*)", "dest": "/api/360" },
+    { "src": "/wolong/(.*)", "dest": "/api/wolong" },
+
+    { "src": "/api/proxy/([^/]+)/(.*)", "dest": "/api/proxy?service=$1&0=$2" },
 
     {
       "src": "/(.*)",
