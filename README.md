@@ -99,6 +99,19 @@ cd ssng_tv_free_online_viewing
 npm install
 ```
 
+### Vercel部署
+
+1. 在Vercel上创建一个新项目
+2. 导入GitHub仓库
+3. 配置构建设置：
+   - 框架预设：Vite
+   - 构建命令：`npm run build`
+   - 输出目录：`dist`
+4. 确保项目根目录包含正确配置的`vercel.json`文件
+5. 部署项目
+
+### 本地开发
+
 3. 启动开发服务器
 ```bash
 npm run dev

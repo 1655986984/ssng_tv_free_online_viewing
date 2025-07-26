@@ -1,56 +1,55 @@
 {
-  "version": 2,
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
         { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
-        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
+        { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     }
   ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "routes": [
-    {"handle": "filesystem"},
-    
-    {
-      "src": "/api/api.php/provide/vod/(.*)",
-      "dest": "https://www.heimuer.tv/api.php/provide/vod/$1"
-    },
 
-    { 
-       "src": "/api/(.*)", 
-       "dest": "https://www.heimuer.tv/$1"
-     },
-    { 
-       "src": "/ikun/(.*)",   
-       "dest": "https://ikunzy.net/$1"
-     },
-    { 
-       "src": "/subo/(.*)",   
-       "dest": "https://www.suboziyuan.net/$1"
-     },
-    { 
-       "src": "/huawei/(.*)", 
-       "dest": "https://cjhwba.com/$1"
-     },
-     { 
-       "src": "/jisu/(.*)",   
-       "dest": "https://www.jisuzy.com/$1"
-     },
-     { 
-       "src": "/360/(.*)",    
-       "dest": "https://360zy5.com/$1"
-     },
-     { 
-       "src": "/wolong/(.*)", 
-       "dest": "https://wolongzyw.com/$1"
-     },
-     {
-       "src": "/(.*)",
-       "dest": "/index.html"
-     }
+  "rewrites": [
+    {
+      "source": "/api/api.php/provide/vod/(.*)",
+      "destination": "https://www.heimuer.tv/api.php/provide/vod/$1"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "https://www.heimuer.tv/$1"
+    },
+    {
+      "source": "/ikun/(.*)",
+      "destination": "https://ikunzy.net/$1"
+    },
+    {
+      "source": "/subo/(.*)",
+      "destination": "https://www.suboziyuan.net/$1"
+    },
+    {
+      "source": "/huawei/(.*)",
+      "destination": "https://cjhwba.com/$1"
+    },
+    {
+      "source": "/jisu/(.*)",
+      "destination": "https://www.jisuzy.com/$1"
+    },
+    {
+      "source": "/360/(.*)",
+      "destination": "https://360zy5.com/$1"
+    },
+    {
+      "source": "/wolong/(.*)",
+      "destination": "https://wolongzyw.com/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
