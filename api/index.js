@@ -14,21 +14,21 @@ export default async function handler(req, res) {
 
   let targetUrl = '';
   if (url.startsWith('/api/api.php/provide/vod/')) {
-    targetUrl = `https://www.heimuer.tv${url}`;
+    targetUrl = `https://www.heimuer.tv${url.replace('/api', '')}`;
   } else if (url.startsWith('/api/')) {
-    targetUrl = `https://www.heimuer.tv${url}`;
+    targetUrl = `https://www.heimuer.tv${url.replace('/api', '')}`;
   } else if (url.startsWith('/ikun/')) {
-    targetUrl = `https://ikunzy.net${url}`;
+    targetUrl = `https://ikunzy.net${url.replace('/ikun', '')}`;
   } else if (url.startsWith('/subo/')) {
-    targetUrl = `https://www.suboziyuan.net${url}`;
+    targetUrl = `https://www.suboziyuan.net${url.replace('/subo', '')}`;
   } else if (url.startsWith('/huawei/')) {
-    targetUrl = `https://cjhwba.com${url}`;
+    targetUrl = `https://cjhwba.com${url.replace('/huawei', '')}`;
   } else if (url.startsWith('/jisu/')) {
-    targetUrl = `https://www.jisuzy.com${url}`;
+    targetUrl = `https://www.jisuzy.com${url.replace('/jisu', '')}`;
   } else if (url.startsWith('/360/')) {
-    targetUrl = `https://360zy5.com${url}`;
+    targetUrl = `https://360zy5.com${url.replace('/360', '')}`;
   } else if (url.startsWith('/wolong/')) {
-    targetUrl = `https://wolongzyw.com${url}`;
+    targetUrl = `https://wolongzyw.com${url.replace('/wolong', '')}`;
   } else {
     return res.status(404).json({ message: 'Not Found' });
   }
@@ -71,13 +71,13 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('Proxy error:', error.message);
     if (error.response) {
-      // 目标服务器返回的错误响应
+      console.error('Target server response status:', error.response.status);
+      console.error('Target server response data:', error.response.data ? error.response.data.toString() : 'No data'); // Convert buffer to string for logging
+      console.error('Target server response headers:', error.response.headers);
       res.status(error.response.status).send(error.response.data);
     } else if (error.request) {
-      // 请求已发出但没有收到响应
       res.status(500).json({ message: 'No response from target server', error: error.message });
     } else {
-      // 其他错误
       res.status(500).json({ message: 'Error during proxy request', error: error.message });
     }
   }

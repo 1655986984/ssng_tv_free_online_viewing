@@ -58,6 +58,9 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('CORS proxy error:', error.message);
     if (error.response) {
+      console.error('Target server response status:', error.response.status);
+      console.error('Target server response data:', error.response.data ? error.response.data.toString() : 'No data');
+      console.error('Target server response headers:', error.response.headers);
       res.status(error.response.status).send(error.response.data);
     } else if (error.request) {
       res.status(500).json({ message: 'No response from target server', error: error.message });
