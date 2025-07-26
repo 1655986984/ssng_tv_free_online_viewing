@@ -1,17 +1,20 @@
 # 烁烁南光在线免费影视
 
-[![GitHub stars](https://img.shields.io/github/stars/nanshuo0814/ssng_tv_free_online_viewing?style=social)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
-[![GitHub forks](https://img.shields.io/github/forks/nanshuo0814/ssng_tv_free_online_viewing?style=social)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
-[![GitHub last commit](https://img.shields.io/github/last-commit/nanshuo0814/ssng_tv_free_online_viewing)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
-[![GitHub issues](https://img.shields.io/github/issues/nanshuo0814/ssng_tv_free_online_viewing)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing/issues)
-[![Vue](https://img.shields.io/badge/Vue.js-3.3.4-4FC08D?logo=vue.js)](https://vuejs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF?logo=vite)](https://vitejs.dev/)
-[![Element Plus](https://img.shields.io/badge/Element_Plus-2.3.9-409EFF?logo=element)](https://element-plus.org/)
-[![Pinia](https://img.shields.io/badge/Pinia-2.1.6-F7D336?logo=pinia)](https://pinia.vuejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Latest-47A248?logo=mongodb)](https://www.mongodb.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?logo=vercel)](https://vercel.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/nanshuo0814/ssng_tv_free_online_viewing?style=for-the-badge&logo=github&color=181717)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
+[![GitHub Forks](https://img.shields.io/github/forks/nanshuo0814/ssng_tv_free_online_viewing?style=for-the-badge&logo=github&color=181717)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/nanshuo0814/ssng_tv_free_online_viewing?style=for-the-badge&logo=github&color=181717)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
+[![GitHub Issues](https://img.shields.io/github/issues/nanshuo0814/ssng_tv_free_online_viewing?style=for-the-badge&logo=github&color=181717)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing/issues)
+
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.3.4-4FC08D?style=for-the-badge&logo=vue.js)](https://vuejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Element Plus](https://img.shields.io/badge/Element_Plus-2.3.9-409EFF?style=for-the-badge&logo=element-plus)](https://element-plus.org/)
+[![Pinia](https://img.shields.io/badge/Pinia-3.0.3-F7D336?style=for-the-badge&logo=pinia)](https://pinia.vuejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Latest-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
+
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
+[![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify)](https://www.netlify.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 <div align="center">
   <img src="src/assets/ssng.png" alt="烁烁南光在线免费影视" width="200" />
@@ -26,23 +29,24 @@
 
 ## 在线预览
 
-- [点击访问演示站点](https://tv.nanshuo.icu)
+- [点击访问Vercel演示站点](https://tv.nanshuo.icu)
+- [点击访问Netlify演示站点](https://ys.nanshuo.icu)
 
 ## 技术栈
 
-- **前端框架**: Vue 3.3.4 (Composition API)
-- **构建工具**: Vite 4.4.5
-- **UI 组件库**: Element Plus 2.3.9
-- **状态管理**: Pinia 2.1.6 + pinia-plugin-persistedstate 4.3.0
-- **路由管理**: Vue Router 4.2.4
-- **HTTP 请求**: Axios 1.8.4
-- **视频播放**: Artplayer 5.2.3 + HLS.js 1.6.2
-- **图表库**: ECharts 5.6.0
-- **工具库**: @vueuse/core 13.2.0, html2canvas 1.4.1, qrcode.vue 3.6.0
-- **评论系统**: Twikoo 1.6.44
-- **进度条**: NProgress 0.2.0
-- **数据存储**: LeanCloud Storage 4.15.2
-- **字体图标**: @element-plus/icons-vue 2.1.0
+- **前端框架**: Vue ^3.3.4 (Composition API)
+- **构建工具**: Vite ^4.4.5
+- **UI 组件库**: Element Plus ^2.3.9
+- **状态管理**: Pinia ^3.0.3 + pinia-plugin-persistedstate ^4.3.0
+- **路由管理**: Vue Router ^4.2.4
+- **HTTP 请求**: Axios ^1.8.4
+- **视频播放**: Artplayer ^5.2.3 + HLS.js ^1.6.2
+- **图表库**: ECharts ^5.6.0
+- **工具库**: @vueuse/core ^13.2.0, html2canvas ^1.4.1, qrcode.vue ^3.6.0
+- **评论系统**: Twikoo ^1.6.44
+- **进度条**: NProgress ^0.2.0
+- **数据存储**: LeanCloud Storage ^4.15.2
+- **字体图标**: @element-plus/icons-vue ^2.1.0
 
 ## ✨ 功能特点
 
@@ -99,19 +103,6 @@ cd ssng_tv_free_online_viewing
 npm install
 ```
 
-### Vercel部署
-
-1. 在Vercel上创建一个新项目
-2. 导入GitHub仓库
-3. 配置构建设置：
-   - 框架预设：Vite
-   - 构建命令：`npm run build`
-   - 输出目录：`dist`
-4. 确保项目根目录包含正确配置的`vercel.json`文件
-5. 部署项目
-
-### 本地开发
-
 3. 启动开发服务器
 ```bash
 npm run dev
@@ -130,53 +121,78 @@ npm run preview
 ## 📂项目结构
 
 ```
-src/
-├── assets/           # 静态资源
-│   ├── icons/       # 图标资源
-│   ├── styles/      # 全局样式
-│   └── *.svg,*.png  # 图片资源
-├── components/       # 公共组件
-│   ├── BackToTop.vue          # 返回顶部
-│   ├── FpsCounter.vue         # FPS计数器
-│   ├── HealthReminderOverlay  # 健康提醒遮罩
-│   ├── Icon.vue              # 图标组件
-│   ├── RestLockScreen.vue    # 休息锁屏
-│   ├── Sidebar.vue           # 侧边栏
-│   ├── ThemeColorPicker.vue  # 主题色选择器
-│   ├── TimeDisplay.vue       # 时间显示
-│   ├── TopNavbar.vue         # 顶部导航栏
-│   └── WeatherDisplay.vue    # 天气显示
-├── router/           # 路由配置
-├── services/         # API服务
-│   └── apiService.js # API接口封装
-├── stores/           # Pinia状态管理
-│   ├── activity.js         # 活动记录
-│   ├── favorite.js         # 收藏管理
-│   ├── healthReminder.js   # 健康提醒
-│   ├── history.js         # 历史记录
-│   ├── searchHistory.js   # 搜索历史
-│   ├── sidebar.js         # 侧边栏状态
-│   └── theme.js           # 主题设置
-├── utils/            # 工具函数
-│   └── meta.js      # 元数据处理
-└── views/            # 页面组件
-    ├── ActivityStats.vue    # 活动统计
-    ├── AnimeNav.vue        # 动漫导航
-    ├── ExternalVideo.vue   # 外部视频
-    ├── Favorites.vue       # 收藏页面
-    ├── HealthReminder.vue  # 健康提醒
-    ├── History.vue         # 历史记录
-    ├── HomePage.vue        # 首页
-    ├── MessageBoard.vue    # 留言板
-    ├── MovieNav.vue        # 电影导航
-    ├── NotFound.vue        # 404页面
-    ├── Search.vue          # 搜索页面
-    ├── ShortsNav.vue       # 短剧导航
-    ├── SouPianView.vue     # 搜片页面
-    ├── TVNav.vue           # 电视剧导航
-    ├── VarietyNav.vue      # 综艺导航
-    ├── VideoDetail.vue     # 视频详情
-    └── VideoPlay.vue       # 视频播放
+.n
+├── .gitignore        # Git忽略文件
+├── LICENSE           # 项目许可证
+├── README.md         # 项目说明文件
+├── api/              # API接口目录
+│   └── index.js      # API入口文件
+├── index.html        # 主HTML文件
+├── netlify.toml      # Netlify部署配置文件
+├── package.json      # 项目依赖和脚本配置
+├── public/           # 静态资源目录
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── apple-touch-icon.png
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon.ico
+│   ├── index.html    # Public目录下的HTML文件
+│   ├── player.html   # 播放器HTML文件
+│   ├── site.webmanifest # Web应用清单文件
+│   └── subtitles/    # 字幕文件目录
+├── src/              # 源代码目录
+│   ├── App.vue           # 应用主组件
+│   ├── main.js           # 入口文件
+│   ├── assets/           # 静态资源
+│   │   ├── icons/        # 图标资源
+│   │   ├── styles/       # 全局样式
+│   │   │   ├── theme-colors.css # 主题色变量
+│   │   │   └── variables.css # 全局变量
+│   │   └── *.svg,*.png   # 图片资源
+│   ├── components/       # 公共组件
+│   │   ├── BackToTop.vue          # 返回顶部
+│   │   ├── FpsCounter.vue         # FPS计数器
+│   │   ├── HealthReminderOverlay.vue # 健康提醒遮罩
+│   │   ├── Icon.vue              # 图标组件
+│   │   ├── RestLockScreen.vue    # 休息锁屏
+│   │   ├── Sidebar.vue           # 侧边栏
+│   │   ├── ThemeColorPicker.vue  # 主题色选择器
+│   │   ├── TimeDisplay.vue       # 时间显示
+│   │   ├── TopNavbar.vue         # 顶部导航栏
+│   │   └── WeatherDisplay.vue    # 天气显示
+│   ├── router/           # 路由配置
+│   │   └── index.js      # 路由入口
+│   ├── stores/           # Pinia状态管理
+│   │   ├── activity.js         # 活动记录
+│   │   ├── favorite.js         # 收藏管理
+│   │   ├── healthReminder.js   # 健康提醒
+│   │   ├── history.js         # 历史记录
+│   │   ├── searchHistory.js   # 搜索历史
+│   │   ├── sidebar.js         # 侧边栏状态
+│   │   └── theme.js           # 主题设置
+│   ├── utils/            # 工具函数
+│   │   └── meta.js       # 元数据处理
+│   └── views/            # 页面组件
+│       ├── ActivityStats.vue    # 活动统计
+│       ├── AnimeNav.vue        # 动漫导航
+│       ├── ExternalVideo.vue   # 外部视频
+│       ├── Favorites.vue       # 收藏页面
+│       ├── HealthReminder.vue  # 健康提醒
+│       ├── History.vue         # 历史记录
+│       ├── HomePage.vue        # 首页
+│       ├── MessageBoard.vue    # 留言板
+│       ├── MovieNav.vue        # 电影导航
+│       ├── NotFound.vue        # 404页面
+│       ├── Search.vue          # 搜索页面
+│       ├── ShortsNav.vue       # 短剧导航
+│       ├── SouPianView.vue     # 搜片页面
+│       ├── TVNav.vue           # 电视剧导航
+│       ├── VarietyNav.vue      # 综艺导航
+│       ├── VideoDetail.vue     # 视频详情
+│       └── VideoPlay.vue       # 视频播放
+├── vercel.json       # Vercel部署配置文件
+└── vite.config.js    # Vite配置文件
 ```
 
 ## 🔍 使用指南
@@ -496,7 +512,84 @@ src/
 - [MongoDB](https://www.mongodb.com/) - 开源的NoSQL数据库
 
 ### 部署平台
-- [Vercel](https://vercel.com/) - 现代化的网站托管平台
+
+本项目支持多种部署方式，您可以选择适合您的平台进行部署：
+
+- **[Vercel](https://vercel.com/)**：现代化的前端托管平台，支持无服务器函数。
+  - 相关文件：`api/index.js`, `vercel.json`
+
+- **[Netlify](https://www.netlify.com/)**：提供自动化部署、CDN、SSL 等服务，简化前端项目部署流程。
+  - 相关文件：`netlify.toml`
+
+- **[Nginx](https://nginx.org/)**：高性能的 Web 服务器和反向代理服务器，适用于服务器部署。
+
+#### Nginx 代理配置示例
+
+以下是根据 `vite.config.js` 中的代理设置生成的 Nginx 代理配置示例。请根据您的实际部署环境（如域名、项目路径等）进行调整。
+
+```nginx
+server {
+    listen 80;
+    server_name your_domain.com; # 替换为您的域名
+
+    # 前端静态文件服务
+    location / {
+        root /path/to/your/dist; # 替换为您的项目构建产物路径
+        index index.html;
+        try_files $uri $uri/ /index.html;
+    }
+
+    # API 代理配置
+    location /api/ {
+        proxy_pass https://www.heimuer.tv/;
+        proxy_set_header Host www.heimuer.tv;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /ikun/ {
+        proxy_pass https://ikunzy.net/;
+        proxy_set_header Host ikunzy.net;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /subo/ {
+        proxy_pass https://www.suboziyuan.net/;
+        proxy_set_header Host www.suboziyuan.net;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /huawei/ {
+        proxy_pass https://cjhwba.com/;
+        proxy_set_header Host cjhwba.com;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /jisu/ {
+        proxy_pass https://www.jisuzy.com/;
+        proxy_set_header Host www.jisuzy.com;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /360/ {
+        proxy_pass https://360zy5.com/;
+        proxy_set_header Host 360zy5.com;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+    location /wolong/ {
+        proxy_pass https://wolongzyw.com/;
+        proxy_set_header Host wolongzyw.com;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+```
 
 ### 特别感谢
 - 感谢所有为本项目提供反馈和建议的用户
