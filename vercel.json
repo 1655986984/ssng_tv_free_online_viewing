@@ -16,40 +16,21 @@
 
   "rewrites": [
     {
-      "source": "/api/api.php/provide/vod/(.*)",
-      "destination": "https://www.heimuer.tv/api.php/provide/vod/$1"
+      "source": "/api/cors-proxy",
+      "destination": "/api/cors-proxy.js"
     },
     {
       "source": "/api/(.*)",
-      "destination": "https://www.heimuer.tv/$1"
-    },
-    {
-      "source": "/ikun/(.*)",
-      "destination": "https://ikunzy.net/$1"
-    },
-    {
-      "source": "/subo/(.*)",
-      "destination": "https://www.suboziyuan.net/$1"
-    },
-    {
-      "source": "/huawei/(.*)",
-      "destination": "https://cjhwba.com/$1"
-    },
-    {
-      "source": "/jisu/(.*)",
-      "destination": "https://www.jisuzy.com/$1"
-    },
-    {
-      "source": "/360/(.*)",
-      "destination": "https://360zy5.com/$1"
-    },
-    {
-      "source": "/wolong/(.*)",
-      "destination": "https://wolongzyw.com/$1"
+      "destination": "/api/index.js"
     },
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ]
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 60
+    }
+  }
 }
