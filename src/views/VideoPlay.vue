@@ -26,6 +26,7 @@
         <div class="title-row">
           <h2 class="video-title">{{ videoInfo?.vod_name }}</h2>
           <div class="controls-row">
+            <!--
             <el-select 
               v-model="currentSource" 
               placeholder="选择播放源" 
@@ -40,6 +41,7 @@
                 :value="sourceItem.value"
               />
             </el-select>
+            -->
             <el-button
               class="sort-button"
               @click="toggleEpisodeSort"
@@ -52,7 +54,8 @@
             </el-button>
           </div>
         </div>
-        <div class="current-episode">当前播放：{{ currentEpisodeName }}</div>
+        <div class="current-episode">播放源：<span style="color: var(--theme-color);">{{ sourceName }}</span></div>
+        <div class="current-episode" style="margin-bottom: 0px !important;">正在播放：<span style="color: var(--theme-color);">{{ currentEpisodeName }}</span></div>
       </div>
 
       <div class="episode-list">
@@ -1036,12 +1039,42 @@ const exitPictureInPicture = () => {
     }
   }
 };
+const sourceName = ref(null);
+const getBfyname = () => {
+  const pathSegments = route.path.split('/')
+  const source = pathSegments[pathSegments.length - 1]
 
+  switch (source) {
+    case 'heimuer':
+      sourceName.value = '黑木耳'
+      break
+    case 'ikun':
+      sourceName.value = '爱坤'
+      break
+    case 'subo':
+      sourceName.value = '速播'
+      break
+    case 'huawei':
+      sourceName.value = '华为'
+      break
+    case 'jisu':
+      sourceName.value = '急速'
+      break
+    case '360':
+      sourceName.value = '360'
+      break
+    case 'wolong':
+      sourceName.value = '卧龙'
+      break
+    default:
+      sourceName.value = '未知源'
+  }
+}
 // 组件挂载时初始化
 onMounted(() => {
   historyStore.loadFromLocal()
   loadVideoInfo()
-  
+  getBfyname();
   // 添加键盘事件监听
   window.addEventListener('keydown', handleKeyDown)
   
@@ -1237,7 +1270,8 @@ watch(() => route.params.episode, () => {
 }
 
 .episode-header {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 .title-row {
@@ -1269,9 +1303,7 @@ watch(() => route.params.episode, () => {
   align-items: center;
   gap: 5px;
   font-size: 14px;
-  padding: 2px 8px;
   height: 24px;
-  margin-bottom: 2px;
   color: var(--theme-color);
   border: none;
   background: transparent;
@@ -1285,6 +1317,7 @@ watch(() => route.params.episode, () => {
 .current-episode {
   font-size: 14px;
   color: var(--text-color-light);
+  margin-bottom: 5px;
 }
 
 .episode-list {

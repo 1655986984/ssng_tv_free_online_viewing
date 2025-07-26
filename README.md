@@ -1,5 +1,10 @@
 # 烁烁南光在线免费影视
 
+<div align="center">
+  <img src="src/assets/ssng.png" alt="烁烁南光在线免费影视" width="200" />
+  <h3>优雅，高效，易用的在线影视观影平台</h3>
+</div>
+
 [![GitHub Stars](https://img.shields.io/github/stars/nanshuo0814/ssng_tv_free_online_viewing?style=for-the-badge&logo=github&color=181717)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
 [![GitHub Forks](https://img.shields.io/github/forks/nanshuo0814/ssng_tv_free_online_viewing?style=for-the-badge&logo=github&color=181717)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/nanshuo0814/ssng_tv_free_online_viewing?style=for-the-badge&logo=github&color=181717)](https://github.com/nanshuo0814/ssng_tv_free_online_viewing)
@@ -15,11 +20,6 @@
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
 [![Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?style=for-the-badge&logo=netlify)](https://www.netlify.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
-<div align="center">
-  <img src="src/assets/ssng.png" alt="烁烁南光在线免费影视" width="200" />
-  <h3>优雅，高效，易用的在线影视观影平台</h3>
-</div>
 
 ## 项目介绍
 
