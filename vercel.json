@@ -16,21 +16,36 @@
 
   "rewrites": [
     {
-      "source": "/api/cors-proxy",
-      "destination": "/api/cors-proxy.js"
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
     },
     {
-      "source": "/api/(.*)",
+      "source": "/ikun/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/subo/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/jisu/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/360/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/wolong/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/huawei/(.*)",
       "destination": "/api/index.js"
     },
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "functions": {
-    "api/**/*.js": {
-      "maxDuration": 60
-    }
-  }
+  ]
 }
