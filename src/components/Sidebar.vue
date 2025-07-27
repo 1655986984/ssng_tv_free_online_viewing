@@ -68,6 +68,10 @@
           <Icon name="ChatDotRound" :color="isActive('/message-board') ? 'var(--theme-color)' : '#909399'" />
           <span>评论留言</span>
         </router-link>
+        <a href="https://www.nanshuo.icu" target="_blank" rel="noopener noreferrer" class="nav-item">
+          <Icon name="Link" color="#909399" />
+          <span>站长网站</span>
+        </a>
       </div>
 
       <!-- 移动端天气和时间显示 -->
@@ -101,6 +105,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { useThemeStore } from '../stores/theme'
 import { useSidebarStore } from '../stores/sidebar'
 import Icon from './Icon.vue'
+
 import FpsCounter from './FpsCounter.vue'
 import WeatherDisplay from './WeatherDisplay.vue'
 import TimeDisplay from './TimeDisplay.vue'
@@ -385,4 +390,4 @@ onMounted(() => {
     display: none;
   }
 }
-</style> 
+</style>

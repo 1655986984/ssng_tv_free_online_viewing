@@ -11,7 +11,8 @@
       <!-- 底部信息 -->
       <footer class="page-footer">
         <p>网站已运行 {{ runningTime }} <span class="heartbeat">❤️</span></p>
-        <p>Copyright &copy; 2025 <a target="_blank" href="https://www.nanshuo.icu" style="color: inherit;text-decoration: none;">南烁</a>. All Rights Reserved.</p>
+        <p>今年的余额还剩下 {{ remainingTime }} <span class="heartbeat"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v6M12 16v6M20 8l-8 8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></p>
+        <p>Copyright &copy; 2025-至今 <a target="_blank" href="https://www.nanshuo.icu" style="color: var(--theme-color);text-decoration: none;">南烁</a>. All Rights Reserved.</p>
         <p class="copyright-notice">注：本站的所有资源均来源于网络公开的资源，若有侵权，请联系网站所有者删除，本站不承担任何法律责任</p>
         <!-- <p>作者: 南烁</p> -->
       </footer>
@@ -23,10 +24,24 @@
   // import WeatherDisplay from '@/components/WeatherDisplay.vue'; // 如果需要天气组件，取消注释
   
   const runningTime = ref('');
+    const remainingTime = ref('');
   const startTime = new Date('2025-04-21T00:00:00'); // 网站启动时间
   let timer = null;
   
-  const updateRunningTime = () => {
+  const updateRemainingTime = () => {
+      const now = new Date();
+      const endOfYear = new Date(now.getFullYear(), 11, 31, 23, 59, 59);
+      const diff = endOfYear.getTime() - now.getTime();
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      remainingTime.value = `${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒`;
+    };
+
+    const updateRunningTime = () => {
     const now = new Date();
     const diff = now.getTime() - startTime.getTime();
   
@@ -40,11 +55,18 @@
   
   onMounted(() => {
     updateRunningTime();
+      updateRemainingTime();
     timer = setInterval(updateRunningTime, 1000);
+      remainingTimer = setInterval(updateRemainingTime, 1000);
   });
   
-  onUnmounted(() => {
-    if (timer) {
+  let remainingTimer = null;
+
+    onUnmounted(() => {
+    if (remainingTimer) {
+        clearInterval(remainingTimer);
+      }
+      if (timer) {
       clearInterval(timer);
     }
   });

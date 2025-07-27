@@ -47,6 +47,7 @@ const iconName = computed(() => {
     'ArrowDown': 'ArrowDown', // 下拉箭头
     'Palette': 'Brush', // 调色板图标
     'Bell': 'Bell', // 健康提醒图标
+    'link': 'Link', // 外部链接图标
     // 添加天气图标
     'Sunny': 'Sunny',
     'Cloudy': 'Cloudy',
@@ -68,4 +69,4 @@ const iconName = computed(() => {
   line-height: 1;
   vertical-align: middle;
 }
-</style> 
+</style>
