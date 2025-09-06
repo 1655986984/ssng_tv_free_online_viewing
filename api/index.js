@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
   let targetUrl = '';
   if (url.startsWith('/api/api.php/provide/vod/')) {
-    targetUrl = `https://www.heimuer.tv${url.replace('/api', '')}`;
+    targetUrl = `https://www.iqiyizyapi.com${url.replace('/api', '')}`;
   } else if (url.startsWith('/ikun/')) {
     targetUrl = `https://ikunzy.net${url.replace('/ikun', '')}`;
   } else if (url.startsWith('/subo/')) {
