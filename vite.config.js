@@ -45,7 +45,7 @@ export default defineConfig({
     port: 5174,
     proxy: {
       '/api': {
-        target: 'https://www.heimuer.tv',
+        target: 'https://www.iqiyizyapi.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },
